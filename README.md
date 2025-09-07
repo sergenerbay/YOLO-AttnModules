@@ -9,8 +9,9 @@ Traditional object detection architectures may benefit from embedded attention m
 
 ## ✅ Attention Modules Checklist
 
-- ✅ **SKAttention** (implemented and tested)
-     Selective Kernel Networks (SKNet) dynamically adjust receptive fields using multi-scale inputs, enabling effective multi-scale object capture with low complexity. [Selective Kernel Networks (SKNet) Paper](https://arxiv.org/abs/1903.06586)
+- ✅ **SKAttention** (implemented and tested)  
+  Selective Kernel Networks (SKNet) dynamically adjust receptive fields using multi-scale inputs, enabling effective multi-scale object capture with low complexity. [Paper](https://arxiv.org/abs/1903.06586)
+
 
 - ✅ **CBAM** (implemented and tested)
 - ✅ **PSA** (implemented and tested)
