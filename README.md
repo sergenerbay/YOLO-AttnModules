@@ -1,7 +1,7 @@
 
-# 🧠 Attention-YOLOv8
+# 🧠 Attention-YOLO
 
-This project focuses on enhancing the YOLOv8 architecture by integrating various attention mechanisms to improve detection performance.
+This project focuses on enhancing the YOLO architecture (Ultralytics-supported versions such as YOLOv5, YOLOv8) by integrating various attention mechanisms to improve detection performance.
 
 Traditional object detection architectures may benefit from embedded attention modules that help the network focus on more informative spatial and channel-wise features. This repository experiments with several popular attention modules within the YOLOv8 model.
 
@@ -10,6 +10,8 @@ Traditional object detection architectures may benefit from embedded attention m
 ## ✅ Attention Modules Checklist
 
 - ✅ **SKAttention** (implemented and tested)
+     Selective Kernel Networks (SKNet) dynamically adjust receptive fields using multi-scale inputs, enabling effective multi-scale object capture with low complexity. [Selective Kernel Networks (SKNet) Paper](https://arxiv.org/abs/1903.06586)
+
 - ✅ **CBAM** (implemented and tested)
 - ✅ **PSA** (implemented and tested)
 - ✅ **SimAM** (implemented and tested)
