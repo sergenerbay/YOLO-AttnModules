@@ -13,7 +13,9 @@ Traditional object detection architectures may benefit from embedded attention m
   **Selective Kernel Networks (SKNet) dynamically adjust receptive fields using multi-scale inputs, enabling effective multi-scale object capture with low complexity. [pdf](https://arxiv.org/abs/1903.06586)**
 
 
-- ✅ **CBAM** (implemented and tested)
+- ✅ **CBAM** (implemented and tested)  
+  **Convolutional Block Attention Module (CBAM) sequentially applies channel and spatial attention to refine feature maps, offering lightweight integration into CNNs with consistent performance gains.**[pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+
 - ✅ **PSA** (implemented and tested)
 - ✅ **SimAM** (implemented and tested)
 - ⏳ **GAM** (planned)
