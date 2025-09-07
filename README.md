@@ -73,9 +73,3 @@ model.train(
 ```
 
 ---
-
-## 📌 Future Plans
-
-- Benchmark each attention module on the same dataset.
-- Analyze the contribution of each attention block during training.
-- Add performance comparison table (mAP, precision, recall) across modules.
