@@ -1,7 +1,7 @@
 
-# 🧠 Attention-YOLOv8
+# 🧠 Attention-YOLO
 
-This project focuses on enhancing the YOLOv8 architecture by integrating various attention mechanisms to improve detection performance.
+This project focuses on enhancing the YOLO architecture (Ultralytics-supported versions such as YOLOv5, YOLOv8) by integrating various attention mechanisms to improve detection performance.
 
 Traditional object detection architectures may benefit from embedded attention modules that help the network focus on more informative spatial and channel-wise features. This repository experiments with several popular attention modules within the YOLOv8 model.
 
@@ -9,10 +9,15 @@ Traditional object detection architectures may benefit from embedded attention m
 
 ## ✅ Attention Modules Checklist
 
-- ✅ **SKAttention** (implemented and tested)
-- ✅ **CBAM** (implemented and tested)
-- ✅ **PSA** (implemented and tested)
-- ✅ **SimAM** (implemented and tested)
+- ✅ **SKAttention** (implemented and tested)  
+  **Selective Kernel Networks (SKNet) dynamically adjust receptive fields using multi-scale inputs, enabling effective multi-scale object capture with low complexity. [pdf](https://arxiv.org/abs/1903.06586)**
+- ✅ **CBAM** (implemented and tested)  
+  **Convolutional Block Attention Module (CBAM) sequentially applies channel and spatial attention to refine feature maps, offering lightweight integration into CNNs with consistent performance gains. 
+ [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)**
+- ✅ **PSA** (implemented and tested)  
+  **Pyramid Squeeze Attention (PSA) enhances multi-scale representation by replacing standard convolutions with lightweight attention, forming EPSA blocks that boost classification, detection, and segmentation performance. [pdf](https://arxiv.org/pdf/2105.14447)**
+- ✅ **SimAM** (implemented and tested)  
+  **SimAM introduces parameter-free 3D attention by optimizing an energy function to assess neuron importance, offering a lightweight and effective way to enhance CNN representations. [pdf](https://proceedings.mlr.press/v139/yang21o/yang21o.pdf)**
 - ⏳ **GAM** (planned)
 - ⏳ **SE** (planned)
 
@@ -68,9 +73,3 @@ model.train(
 ```
 
 ---
-
-## 📌 Future Plans
-
-- Benchmark each attention module on the same dataset.
-- Analyze the contribution of each attention block during training.
-- Add performance comparison table (mAP, precision, recall) across modules.
